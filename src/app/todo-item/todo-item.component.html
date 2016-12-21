@@ -1,0 +1,4 @@
+<div [ngSwitch]="item.mode">
+  <app-todo-view [item]="item" *ngSwitchCase="'view'">...</app-todo-view>
+  <app-todo-edit [item]="item" *ngSwitchCase="'edit'">...</app-todo-edit>
+</div>
