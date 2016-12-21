@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { TodoService } from './todo.service';
+import { Component, Inject } from '@angular/core';
+import { TITLE } from './title.token';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,11 +7,9 @@ import { TodoService } from './todo.service';
 })
 export class AppComponent {
 
-  get items(): any[] {
-    return this._todoService.getItems();
-  }
 
-  constructor(private _todoService: TodoService) {
+  constructor(
+    @Inject(TITLE) public title: string) {
   }
 
 }
