@@ -14,7 +14,7 @@ import { Child1Component } from './child1/child1.component';
 import { Child2Component } from './child2/child2.component';
 
 const appRoutes: Routes = [
-  { path: 'todo', component: TodoComponent },
+  { path: 'todo/:title/item/:subtitle', component: TodoComponent },
   {
     path: '',
     redirectTo: '/home',
@@ -23,6 +23,9 @@ const appRoutes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
+    data: {
+      abc: 'abcd'
+    },
     children: [
       {
         path: 'child1',
