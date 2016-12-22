@@ -1,3 +1,7 @@
-<h1>{{title}}</h1>
-<app-todo-add></app-todo-add>
-<app-todo-list></app-todo-list>
+
+<a routerLink="" routerLinkActive="active">home</a>
+<a routerLink="todo" routerLinkActive="active">todo</a>
+
+<div class="top-container">
+    <router-outlet></router-outlet>
+</div>
