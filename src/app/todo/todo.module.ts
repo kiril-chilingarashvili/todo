@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
-import { 
+import {
     TodoService,
 
     TodoAddComponent,
@@ -20,7 +20,7 @@ import {
         FormsModule,
         HttpModule,
 
-        MaterialModule.forRoot()
+        MaterialModule
     ],
     exports: [
         TodoAddComponent,
