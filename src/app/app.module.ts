@@ -14,10 +14,11 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { Child1Component } from './child1/child1.component';
 import { Child2Component } from './child2/child2.component';
 import { HttpComponent } from './http/http.component';
+import { Http2Component } from './http2/http2.component';
 
 const appRoutes: Routes = [
   { path: 'todo', component: TodoComponent },
-  { path: 'http', component: HttpComponent },
+  { path: 'http2', component: Http2Component },
   {
     path: '',
     redirectTo: '/home',
@@ -51,7 +52,8 @@ const appRoutes: Routes = [
     PageNotFoundComponent,
     Child1Component,
     Child2Component,
-    HttpComponent
+    HttpComponent,
+    Http2Component
   ],
   imports: [
     TodoModule,
